@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Open Sans";
+    font-size: 18px;
+    color: #3d3d3d;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Roboto";
+}
+
+h1, h2 {
+    text-transform: uppercase;
+}
+
+header {
+    padding: 30px 4%;
+    position:absolute;
+    width: 100%;
+}
+
+navbar {
+    float:right;
+}
+
+navbar a {
+    padding: 0px 15px 10px 15px;
+    font-size: 22px;
+    color: white !important;
+}
+
+navbar a:hover, .active {
+    font-weight: bold;
+    border-bottom: 2px solid #06b440;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    padding: 10px 12%;
+    min-height: 70vh;
+}
+
+main h2 {
+    color: #cf1313;
+    text-transform: uppercase;
+}
+
+
+footer {
+    min-height: 60px;
+    background-color: #1411af;
+    color: white;
+    padding: 5px 10px 25px 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 17px;
+    line-height: 165%;
+}
+
+.text1 {
+  list-style-type: none;
+  font-size: 26px;
+  padding-left: 0px;
+  line-height: 170%;
+}
+
+
+.row {
+    overflow: auto;
+}
+
+.col-30 {
+    width: 30%;
+    float: left;
+    
+    /* padding: 2px 5px; */
+}
+
+.col-70 {
+    width: 70%;
+    float:left;
+    padding: 10px 20px;
+}
+
+.col-100 {
+    width: 100%;
+    float:left;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 34px;
+    margin-top: -20px;
+    display: inline-block;
+    color: white;
+}
+
+
+
+.top-section {
+    background: linear-gradient(#050331c7, #04042e81);
+    min-height: 320px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+
+.video {
+    width: 100%;
+    height: 80vh;
+    object-fit:cover;
+    
+    position:absolute;
+    z-index: -1;
+}
+
+#index {
+    height: 80vh;
+}
+
+
+.top-title {
+    margin-top: 45px;
+    font-size: 42px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.linia-verde {
+    background-color: #059b37;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.linia-verde a {
+    color: white;   
+}
+
+
+.noutate {
+    border: 1px solid lightgray;
+    padding: 0px 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 2px 2px 15px 2px;
+    border-radius: 10px;
+}
+
+.noutate img {
+   width: 140px;
+   height: 140px;
+   object-fit: cover;
+   margin-top: 5px;
+}
+
+.noutate h3 {
+    margin-bottom: 5px;
+}
+
+.centered {
+    text-align: center;
+}
+
+.video-yt {
+    width: 100%;
+    max-width: 350px;
+    height: 200px;
+    margin-top: 15px;
+}
+
+#bgimg {
+    background: linear-gradient(#050331c5, #04042e81), url("/images/New\ video.mp4");  
+    background-position: 0% 60%;
+    background-size: cover;
+}
+
+
+
+
+.md-stat-desk {
+    width:100%;
+    height: 80vh;
+}
+
+
+
+.big {
+    font-size: 72px;
+}
+
+.contact {
+    margin: 20px 4px;
+    border: 2px solid lightgray;
+    padding: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#intrebare {
+    width: 100%;
+    padding: 5px;
+    margin-top: 10px;
+    resize: none;
+    font-family: inherit;
+}
+
+.md-stat-mobile {
+    display: none;
+}
+
+@media (max-width: 1150px) {
+
+    main {
+        padding: 10px 4%;
+    }
+
+}
+
+@media (max-width: 850px) {
+    main {
+        padding: 10px;
+    }
+
+    .md-stat-mobile {
+        display: block;
+        width: 100%;
+        height: 65vh;
+    }
+
+    .md-stat-desk {
+        display: none;
+    }
+
+    .col-30, .col-70, .col-100 {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .top-title {
+        font-size: 25px;
+        text-align: center;
+        margin-top: 140px;
+    }
+
+    #navbar a:first-child{
+        display: none;
+    }
+
+    #navbar a {
+        display: block;
+        font-size: 18px;
+        margin-top: 5px;
+    }
+
+    #navbar {
+        margin-top: -17px;
+    }
+
+}
+
+.oferte {
+    border: 1px solid lightgray;
+    padding: 0px 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 2px 2px 15px 2px;
+    border-radius: 10px;
+}
+
+
+
+.tabel {
+    border: 1px solid lightgray;
+    padding: 0px 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 2px 2px 15px 2px;
+    border-radius: 10px;
+}
+.table, th, td {
+    border: 1px solid black;
+  }
+
